@@ -1,0 +1,180 @@
+.peeping_pets{
+    width: 100%;
+    padding-top: 0;
+    margin-bottom: -10.2%;
+    max-width: 2560px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    z-index: -10;
+}
+.peeping_pets img{
+width: 100%;
+}
+
+.footer .footer_logo {
+  grid-area: one;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-wsa-logo {
+  max-width: 18rem;
+}
+
+.footer-wsa_name {
+  font-size: 4rem;
+  border-left: 0.3rem solid darkgreen;
+  padding: 1rem 0 1rem 1.5rem;
+  margin-left: 1rem;
+  font-family: "Permanent Marker", cursive;
+}
+
+.footer .div_email {
+  grid-area: two;
+}
+
+.subscribe {
+  margin-bottom: 3rem;
+  /* border: 2px double darkgreen;
+  padding: 3rem 1rem; */
+
+}
+.subscribe label {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+#email-id {
+  font-size: 1.3rem;
+  font-family: "Comic Neue", cursive;
+  letter-spacing: 0.2rem;
+  font-weight: 400;
+  padding: 1em 3em;
+  margin: 0.2rem 0;
+  border: none;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  outline: none;
+}
+
+.contact_info{
+    text-align: center;
+}
+.our-mail,
+.our-phone {
+  margin-bottom: 0.3rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.work-time,
+.work-day {
+  margin-bottom: 0.3rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.subscribe-btn {
+  background-color: var(--green);
+  color: var(--white);
+  font-size: 1.3rem;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  padding: 1em 0.9em;
+  margin: 0.2rem 0 0.2rem -0.4rem;
+  border: none;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+
+.subscribe-btn:hover{
+  background-color: var(--orange);
+  color: var(--white);
+}
+.footer .dog_line_art {
+  grid-area: three;
+  display: grid;
+  justify-content: end;
+  margin: 0 auto;
+}
+
+.footer .dog_line_art img {
+  max-width: 50rem;
+}
+
+.footer_social_media_sidebar{
+  padding: 1rem 0 1rem 2rem;
+  display: flex;
+  justify-content:flex-start;
+  gap: 2rem;
+  background: rgb(255,103,31);
+  background: linear-gradient(180deg, rgba(255,103,31,1) 0%, rgb(255, 150, 101) 100%);
+}
+
+.footer_social_media_sidebar .s-media{
+    color:white;
+}
+.s-media:hover{
+    color: var(--green);
+}
+
+.footer {
+  background: rgb(255,103,31);
+  background: linear-gradient(180deg, rgba(255,150,101) 0%, rgb(255, 189, 159) 100%);
+  color:darkgreen;
+  display: grid;
+  gap: 2rem;
+  padding-block: 2rem;
+  align-items: center;
+  justify-items: center;
+  grid-template-areas:
+    "one three"
+    "two three";
+}
+
+.copyright{
+  display: block;
+  text-align: center;
+  font-weight: 500;
+}
+/* ------------------------------------------------------------------ */
+
+@media (max-width: 640px) {
+  .footer {
+    grid-template-areas:
+      "one"
+      "three"
+      "two";
+    gap: 4rem;
+  }
+
+  .footer .footer_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-wsa-logo {
+    width: 12rem;
+  }
+  .footer-wsa_name {
+    font-size: 2rem;
+    border-left: 0.2rem solid var(--white);
+    padding: 1rem 0 1rem 1.5rem;
+    margin-left: 1rem;
+    font-family: "Permanent Marker", cursive;
+  }
+
+  .footer .dog_line_art {
+    display: grid;
+    justify-content: center;
+  }
+  .footer .dog_line_art img {
+    width: 32rem;
+  }
+}

@@ -1,0 +1,310 @@
+.social_media_sidebar {
+  display: flex;
+  justify-content: flex-end;
+  background-color: var(--orange);
+  padding: 1.2rem 4.5rem;
+  gap: 5rem;
+}
+
+.social_media_sidebar .fa-brands {
+  color: var(--white);
+}
+/* ---------------------------------------------------------- */
+
+
+.gallery_hero_section {
+    padding: 0;
+    position: relative;
+    color: var(--white);
+    position: fixed;
+    top: 8rem;
+    left: 0;
+    right: 0;
+    bottom:0;
+    z-index:-999;
+  }
+  
+  .gallery-backround-image {
+    height: 90vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(50%);
+  }
+  
+  .gallery_hero_title {
+    position: absolute;
+    bottom: 13%;
+    left: 0;
+    /* right: 15%; */
+    padding-left: 3rem;
+  }
+  .gallery_hero_title p {
+    font-size: calc(1rem + 0.8vw);
+    letter-spacing: 0.1rem;
+    border-bottom: 2px solid var(--orange);
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    font-weight: 300;
+  }
+  .gallery_hero_title h1 {
+    font-size: calc(2.4rem + 1vw);
+    letter-spacing: 0.1rem;
+    font-weight: 700;
+  }
+  .gallery_hero_title h1 span {
+    color: var(--orange);
+  }
+
+  /* --------------------PICTURE GRID SECTION----------------------- */
+
+  .picture_section .one{
+  grid-area: one;  
+  }
+
+  .picture_section .two{
+  grid-area: two;  
+  }
+
+  .picture_section .three{
+  grid-area: three;  
+  }
+
+  .picture_section .four{
+  grid-area: four;  
+  }
+
+  .picture_section .five{
+  grid-area: five;  
+  }
+
+  .picture_section .six{
+  grid-area: six;  
+  }
+
+  .picture_section .seven{
+  grid-area: seven;  
+  }
+
+  .picture_section .eight{
+  grid-area: eight;  
+  }
+
+  .picture_section .nine{
+  grid-area: nine;  
+  }
+
+  .picture_section .ten{
+  grid-area: ten;  
+  }
+
+  .picture_section .eleven{
+  grid-area: eleven;  
+  }
+
+  .picture_section .twelve{
+  grid-area: twelve;  
+  }
+
+  .picture_section .thirteen{
+  grid-area: thirteen;  
+  }
+
+  .picture_section .fourteen{
+  grid-area: fourteen;  
+  }
+
+  .picture_section .fifteen{
+  grid-area: fifteen;  
+  }
+
+.picture_section{
+  padding-top: 100vh;
+  text-align: center;
+}
+.picture_section h1{
+  font-size: 2.4rem;
+  padding: 1rem 0;
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+/* .picture_banner{
+  width: 100%;
+}
+.picture_banner img{
+  width: 100%;
+} */
+
+
+  .picture_grid{
+    position: relative;
+    padding: 5rem 2rem;
+    background-color:white;
+    display: grid;
+    gap: 1rem;
+    grid-template-areas:
+    "five one one three"
+    "six four two seven"
+    "eight nine nine ten"
+    "eleven nine nine twelve"
+    "eleven thirteen fourteen fifteen";
+  }
+
+.image_grid{
+width: 100%;
+position: relative;
+margin: 0.3rem;
+overflow: hidden;
+cursor: pointer;
+  }
+
+  .induvidual_img{
+width: 100%;
+height: 100%;
+object-fit: cover;
+object-position: center;
+transition: all 2s;
+
+  }
+
+  .img_label{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+transition: all 0.3s;
+
+  }
+
+  .img_label p{
+    color: white;
+    font-size: 1.6rem;
+  font-family: 'Kalam', cursive;
+letter-spacing: 0.1rem;
+  font-weight: 300;
+  }
+
+  .image_grid:hover>.img_label{
+    display: none;
+  }
+  .image_grid:hover>.induvidual_img{
+   transform: scale(1.1);
+  }
+/* -------------------------------- MODAL SECTION ------------------------------- */
+
+
+  .modal{
+    background-color: rgba(0, 0, 0, 0.8);
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .modal.open{
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .full-img{
+    position: absolute;
+    height: 60%;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.5);
+    transition: all 0.25 ease-out;
+  }
+
+  .full-img.open{
+    transform: translate(-50%,-50%) scale(1);
+  }
+
+  .modal p{
+    color: rgb(255, 243, 183);
+    font-size: 2rem;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%,-5%);
+  }
+
+
+/* ---------------------------------------------------------------------
+_____________________________ RESPONSIVE _______________________________
+---------------------------------------------------------------------- */
+/* 2xl */
+@media (max-width: 1536px) {
+}
+
+/* xl */
+@media (max-width: 1280px) {
+
+
+}
+
+/* lg */
+@media (max-width: 1024px) {
+
+  .picture_grid{
+    padding: 4rem 1.5rem;
+    display: grid;
+    gap: 0.8rem;
+    grid-template-areas:
+    "five one one"
+    "six four two"
+    "three seven ten"
+    "eight nine nine"
+    "eleven nine nine"
+    "eleven fifteen fourteen"
+    "twelve thirteen fourteen";
+  }
+}
+
+/* md */
+@media (max-width: 768px) {
+
+}
+
+/* sm */
+@media (max-width: 640px) {
+  .picture_grid{
+    padding: 4rem 1.5rem;
+    display: grid;
+    gap: 0.8rem;
+    grid-template-areas:
+    "one one"
+    "one one"
+    "six two"
+    "five four"
+    "fifteen fifteen"
+    "nine nine"
+    "seven seven"
+    "eleven eleven"
+    "fourteen fourteen"
+    "ten eight"
+    "twelve thirteen"
+    "three three";
+    background-color: rgb(255, 243, 183);
+  }
+  .img_label{
+  /* background-color: rgba(0, 0, 0, 0.394); */
+  display: none;
+  }
+  .modal{
+    display: none;
+  }
+}
+
+/* xs */
+@media (max-width: 475px) {
+
+}

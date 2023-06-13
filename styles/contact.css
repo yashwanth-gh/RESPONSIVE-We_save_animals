@@ -1,0 +1,265 @@
+/* --------------------------HERO SECTION-------------------------------- */
+
+.contactUs_hero_section {
+  padding: 0;
+  position: relative;
+  color: var(--white);
+  position: fixed;
+  top: 8rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -99;
+}
+
+.contactUs-backround-image {
+  height: 90vh;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(50%);
+}
+
+.contactUs_hero_title {
+  position: absolute;
+  bottom: 13%;
+  left: 0;
+  /* right: 15%; */
+  padding-left: 3rem;
+}
+.contactUs_hero_title p {
+  font-size: calc(1rem + 0.8vw);
+  letter-spacing: 0.1rem;
+  border-bottom: 2px solid var(--orange);
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  font-weight: 300;
+}
+.contactUs_hero_title h1 {
+  font-size: calc(2.4rem + 1vw);
+  letter-spacing: 0.1rem;
+  font-weight: 700;
+}
+.contactUs_hero_title h1 span {
+  color: var(--orange);
+}
+
+/* --------------------------ORANGE BAR SECTION-------------------------------- */
+
+.contact_banner {
+  text-align: center;
+  padding-top: 100vh;
+}
+
+.contact_banner .orange_bar {
+  font-size: 2.4rem;
+  padding: 1rem 0;
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+/* --------------------------CONTACT SECTION-------------------------------- */
+
+.contact_us_form {
+  background-color: white;
+  display: flex;
+  gap: 1rem;
+  /* margin: 5rem; */
+  padding: 1.5rem;
+}
+
+.reach_from_social-media {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 5rem;
+}
+
+.direct_contact {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 5rem;
+}
+
+.direct_contact .fa-solid {
+  color: var(--green);
+}
+
+.direct_contact .description h2 {
+  color: darkgreen;
+  margin-bottom: 0.5rem;
+}
+.direct_contact .description p {
+  color: rgb(0, 52, 0);
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.div_social-media {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 1rem;
+}
+.div_social-media a {
+  color: darkgreen;
+}
+
+/* --------------------------FORM---------------------- */
+.reach_from_form {
+  /* background-color:rgb(255, 197, 90); */
+  background-color: rgb(255, 192, 76);
+  padding: 5rem;
+  border-radius: 3rem;
+  color: rgb(0, 70, 0);
+}
+
+.reach_from_form h1 {
+  font-size: 3rem;
+  width: 90%;
+  margin-bottom: 1rem;
+}
+
+.reach_from_form p {
+  font-size: 1.6rem;
+  width: 60%;
+  margin-bottom: 2rem;
+}
+
+.reach_from_form input,
+.reach_from_form label,
+.reach_from_form textarea {
+  display: block;
+  background-color: rgb(255, 192, 76);
+  border: none;
+  border-bottom: 0.15rem solid rgba(0, 100, 0, 0.737);
+  width: 100%;
+  padding: 2rem 0 1rem 0.2rem;
+  margin-bottom: 0.5rem;
+  outline: none;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(109, 77, 0);
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+.reach_from_form input::placeholder {
+  color: rgba(0, 83, 0, 0.408);
+}
+.reach_from_form label {
+  border: none;
+  color: darkgreen;
+  display: inline-block;
+}
+
+#user_message {
+  resize: none;
+  height: 15vh;
+  padding-top: 0;
+  margin-bottom: 2rem;
+}
+
+.checker_box {
+  display: flex;
+  flex-direction: column;
+}
+
+.div_check_box {
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+input[type="checkbox"] + label {
+  display: block;
+  margin: 0.2em;
+  cursor: pointer;
+  padding: 0.2em;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"] + label:before {
+  content: "\2714";
+  border: 0.1em solid darkgreen;
+  border-radius: 0.2em;
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  padding-left: 0.2em;
+  padding-bottom: 0.3em;
+  margin-right: 0.2em;
+  vertical-align: bottom;
+  color: transparent;
+  transition: 0.2s;
+}
+
+input[type="checkbox"] + label:active:before {
+  transform: scale(0);
+}
+
+input[type="checkbox"]:checked + label:before {
+  background-color: darkgreen;
+  border-color: darkgreen;
+  color: #fff;
+}
+
+.form_button {
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.submit_form_btn {
+  width: 100%;
+  font-size: 1.6rem;
+  padding: 1em 0;
+  background-color: darkgreen;
+  color: white;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.submit_form_btn:hover {
+  background-color: rgb(255, 255, 255);
+  color: darkgreen;
+}
+
+.maps {
+  height: 40vh;
+  width: 100%;
+  background-color: white;
+  padding: 3rem 5rem;
+  /* border: 0.2rem solid darkgreen; */
+
+
+}
+.maps iframe {
+  width: 100%;
+  height: 100%;
+}
+/* ----------------------------------------RESPONSIVE---------------------------------------------- */
+
+@media (max-width: 1024px) {
+  .contact_us_form {
+    flex-wrap: wrap-reverse;
+  }
+  .reach_from_social-media {
+    width: 80%;
+    margin: 0 auto;
+    padding: 5rem 0;
+  }
+  .reach_from_form h1 {
+    font-size: 3rem;
+    width: 95%;
+    margin-bottom: 1rem;
+  }
+  
+  .reach_from_form p {
+    font-size: 1.6rem;
+    width: 80%;
+    margin-bottom: 2rem;
+  }
+}

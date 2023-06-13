@@ -1,0 +1,204 @@
+.wsa_medium_screen_logo{
+    display: none;
+}
+.navigation_panel {
+  width: 100%;
+  padding: 0 4rem;
+  height: 8rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  /* background-color: var(--white); */
+  background-color: #f7f5ff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.navigation_panel .wsa-logo {
+  position: absolute;
+  height: 14rem;
+  top: 1rem;
+  left: 5rem;
+}
+
+.navbar-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+
+.navbar-link:link,
+.navbar-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-bottom: 0.2rem;
+  padding-bottom: 0.2rem;
+  color: var(--green);
+  font-size: 1.5rem;
+  font-weight: 600;
+  transition: all 0.1s ease;
+}
+
+.navbar-link:hover,
+.navbar-link:active {
+  color: var(--orange);
+  border-bottom: 0.2rem solid var(--green);
+  margin-bottom: 0;
+}
+
+.donate-btn {
+  background-color: var(--green);
+  color: var(--white);
+  font-size: 1.4rem;
+  font-family: 'Permanent Marker', cursive;
+  letter-spacing: 0.2rem;
+  font-weight: 400;
+  padding: 0.6em 0.9em;
+  margin: 0.3rem;
+  border: none;
+  border-radius: 5%;
+  box-shadow: 0.3rem 0.3rem 0 darkgreen;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+
+.donate-btn:active {
+  box-shadow: none;
+  margin: 0.6rem 0 0 0.6rem;
+}
+
+/* --------------------------HAMBURGER------------------------- */
+
+.hamburger-btn {
+  display: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.hamburger-btn .fa-xmark {
+  display: none;
+}
+
+/* ------------------------SCROLL TRANSFORM--------------------- */
+
+.scrolled{
+  transition: all 0.8s ease;
+  border-bottom: 0.1rem solid var(--orange);
+  justify-content: space-between;
+  height: 7rem;
+}
+
+.scrolled .wsa-logo{
+  transition: all 0.8s ease;
+  position: static;
+  height:5.5rem;
+}
+.scrolled .navbar-list{
+  gap: 6rem;
+}
+
+/* --------------------------------------------------------- */
+/* _______________________ RESPONSIVE ______________________ */
+/* --------------------------------------------------------- */
+
+/* 980px */
+
+@media (max-width: 60em) {
+
+  .navigation_panel {
+    justify-content: space-between;
+  }
+.navigation_panel .large_screen{
+    display: none;
+}
+.wsa_medium_screen_logo{
+    display:block;
+    /* ------------12th june----------------- */
+    position: fixed;
+    /* ----------------------------- */
+  }
+  .navigation_panel .wsa-logo {
+    position: static;
+    height: 6rem;
+  }
+  .wsa_medium_screen_logo{
+    display: flex;
+    gap: 0.5rem;
+  }
+  .wsa_name{
+border-left: 0.3rem solid var(--orange);
+padding-left: 0.4rem;
+font-family: "Permanent Marker", cursive;
+
+  }
+  .wsa_name p{
+    margin: 0.3rem 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--green);
+}
+.wsa_name .wsa-name-dot{
+      color: var(--orange);
+  }
+  .navbar-link:hover,
+  .navbar-link:active {
+    color: var(--white);
+    border-bottom: 0.2rem solid var(--green);
+    margin-bottom: 0;
+  }
+  .hamburger-btn {
+    display: block;
+    z-index: 999;
+    /* border: 0.1rem solid var(--green); */
+    padding: 0.2rem;
+    border-radius: 10%;
+  }
+
+  .navbar {
+    /* display: none; */
+    width: 100%;
+    height: 100vh;
+    background: rgb(255, 128, 69);
+
+    filter: brightness(90%);
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    /* -------------transition----------- */
+    transform: translateX(100%);
+    transition: all 0.5s ease;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+
+  .navbar-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .active .navbar {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .active .fa-bars {
+    display: none;
+  }
+  .active .fa-xmark {
+    display: block;
+  }
+}

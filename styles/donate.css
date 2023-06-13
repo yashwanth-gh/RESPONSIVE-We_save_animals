@@ -1,0 +1,215 @@
+.social_media_sidebar {
+  display: flex;
+  justify-content: flex-end;
+  background-color: var(--orange);
+  padding: 1.2rem 4.5rem;
+  gap: 5rem;
+}
+
+.social_media_sidebar .fa-brands {
+  color: var(--white);
+}
+/* ---------------------------------------------------------- */
+
+.donate_hero_section {
+  padding: 0;
+  position: relative;
+  color: var(--white);
+  position: fixed;
+  top: 8rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -999;
+}
+
+.donate-backround-image {
+  height: 90vh;
+  width: 100%;
+  object-fit: cover;
+  object-position: 24%;
+  filter: brightness(50%);
+}
+
+.donate_hero_title {
+  position: absolute;
+  bottom: 13%;
+  left: 0;
+  /* right: 15%; */
+  padding-left: 3rem;
+}
+.donate_hero_title p {
+  font-size: calc(1rem + 0.8vw);
+  letter-spacing: 0.1rem;
+  border-bottom: 2px solid var(--orange);
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  font-weight: 300;
+}
+.donate_hero_title h1 {
+  font-size: calc(2.4rem + 1vw);
+  letter-spacing: 0.1rem;
+  font-weight: 700;
+}
+.gallery_hero_title h1 span {
+  color: var(--orange);
+}
+
+.donate_cover_image {
+  background: linear-gradient(rgba(255, 255, 255, 0.5),rgba(255, 255, 255, 0.5)),url("/images/donatecover.jpg");
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  padding-top:5rem;
+}
+
+
+/* --------------------------ORANGE BAR SECTION-------------------------------- */
+
+.contact_banner {
+ margin-top: 100vh;
+  text-align: center;
+}
+
+.contact_banner .orange_bar {
+  font-size: 2.4rem;
+  padding: 1rem 0;
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+/* ------------------------- GRID ----------------------------- */
+
+
+
+.donate_gridcontainer:nth-child(1){
+grid-area:one;
+}
+.donate_gridcontainer:nth-child(2){
+grid-area:two;
+}
+.donate_gridcontainer:nth-child(3){
+grid-area:three;
+}
+.donate_gridcontainer:nth-child(4){
+grid-area:four;
+}
+.donate_gridcontainer:nth-child(5){
+grid-area:five;
+}
+.donate_gridcontainer:nth-child(6){
+grid-area:six;
+}
+.donate_gridcontainer:nth-child(7){
+grid-area:seven;
+}
+.donate_gridcontainer:nth-child(8){
+grid-area:eight;
+}
+.donate_gridcontainer:nth-child(9){
+grid-area:nine;
+}
+
+
+
+.donate_gridcontainer{
+  display: grid;
+  gap: 3rem 1rem;
+  grid-template-areas: 
+  "one nine three"
+  "four five six"
+  "seven eight two";
+}
+
+
+.donate_griditems{
+  width: 90%;
+  margin: 0 auto;
+  background-color:rgb(255, 201, 101);
+  color: rgb(0, 78, 0);
+  text-align: center;
+  padding: 2rem 1rem;
+  border: 0.2rem solid darkgreen;
+  border-radius: 1rem;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items:center;
+  }
+  
+  .donate_gifs{
+    width: 90%;
+    margin: 1rem auto;
+    background-color: white;
+    border: 0.1rem solid darkgreen;
+    border-radius: 1rem;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: flex-end;
+  }
+  
+  .donate_gifs img{
+  width: 80%;
+  height:100%;
+  }
+  
+  .donate_griditems h1{
+  font-size:2.5rem;
+  margin-bottom: 1rem;
+
+  }
+  
+  .donate_griditems h2{
+    font-size:1.8rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+
+  }
+  
+  .donate_griditems p{
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+
+  }
+  
+  .donate_griditems .donate_page_btn{
+    width: 80%;
+    margin: 0 auto;
+  background-color:white;
+  color:darkgreen;
+  border: none;
+  font-size: 1.6rem;
+  padding: 0.6em;
+  border: 0.2rem solid darkgreen;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  transition: all 0.15s;
+  }
+
+  .donate_griditems .donate_page_btn:hover{
+background-color: darkgreen;
+color: white;
+border: 0.2rem solid rgb(255, 235, 198);
+  }
+
+  /* ---------------------------RESPONSIVE------------------------------ */
+
+  @media(max-width:768px){
+    .donate_gridcontainer{
+      display: grid;
+      gap: 2rem;
+      grid-template-areas: 
+      "one"
+      "two"
+      "three"
+      "four"
+      "five"
+      "six"
+      "seven"
+      "eight"
+      "nine";
+    }
+  }

@@ -1,0 +1,345 @@
+.social_media_sidebar {
+  display: flex;
+  justify-content: flex-end;
+  background-color: var(--orange);
+  padding: 1.2rem 4.5rem;
+  gap: 5rem;
+}
+
+.social_media_sidebar .fa-brands {
+  color: var(--white);
+}
+/* ---------------------------------------------------------- */
+
+
+.about_us_hero_section {
+  padding: 0;
+  position: relative;
+  color: var(--white);
+  position: fixed;
+  top: 8rem;
+  left: 0;
+  right: 0;
+  bottom:0;
+  z-index:-999;
+}
+
+.about-us-backround-image {
+  height: 90vh;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(50%);
+}
+
+.about_us_hero_title {
+  position: absolute;
+  bottom: 13%;
+  left: 0;
+  padding-left: 3rem;
+}
+.about_us_hero_title p {
+  font-size: calc(1rem + 0.8vw);
+  letter-spacing: 0.1rem;
+  border-bottom: 2px solid var(--orange);
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  font-weight: 300;
+}
+.about_us_hero_title h1 {
+  font-size: calc(2.4rem + 1vw);
+  letter-spacing: 0.1rem;
+  font-weight: 700;
+}
+.about_us_hero_title h1 span {
+  color: var(--orange);
+}
+
+/* --------------------OUR STORY SECTION ----------------- */
+main{
+  background-color: white;
+}
+.story_section {
+  /* padding: 0 3rem; */
+  margin-top: 100vh;
+  text-align: center;
+  background-color: white;
+  
+}
+.story_section div h1{
+  background-color: var(--orange);
+  color: white;
+  padding: 1rem;
+  font-size: calc(2rem + 1vw);
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+}
+
+.our_story_image {
+  /* position: relative; */
+  width: 100%;
+  color: white;
+}
+
+.our_story_image img {
+  width: 100%;
+  /* position: relative; */
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(50%);
+}
+.image_cont{
+  position: relative;
+  /* z-index:-1; */
+}
+/* .image_cont h1 {
+  position: absolute;
+  bottom: 40%;
+  left: 40%;
+  z-index: 10;
+  font-size: calc(2rem + 1vw);
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  color:var(--white);
+} */
+
+.div_story {
+  padding: 2rem 2rem 6rem;
+  width: 92%;
+  box-shadow: 0.6rem 0.6rem 1rem rgba(255, 153, 0, 0.5);
+  margin:  -1rem auto 0;
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+h2 {
+  font-size: 2.4rem;
+  margin: 2rem;
+}
+p {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  font-weight: 300;
+  font-family: 'Kalam', cursive;
+}
+
+.praveens_story {
+  padding: 2rem 0;
+}
+.praveens_story img {
+  width: 14em;
+  height: 14em;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 50%;
+  border: 2px solid darkgreen;
+}
+
+.begining {
+  padding: 3rem 0.5rem;
+  background-color: #fff8ed;
+  color: var(--green);
+}
+.begining span {
+  color: var(--orange);
+}
+
+/* --------------------WORK SECTION ----------------- */
+
+.our_work_section {
+  text-align: center;
+  margin: 4rem auto;
+  color: var(--green);
+  width: 90%;
+  background-color: white;
+}
+
+
+.our_work_section p {
+  font-family: "Montserrat", sans-serif;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+.three_steps .img1 {
+  grid-area: img1;
+}
+.three_steps .img2 {
+  grid-area: img2;
+}
+.three_steps .img3 {
+  grid-area: img3;
+}
+
+.three_steps {
+  margin: 5rem auto;
+  width: 80%;
+  display: grid;
+  gap: 1rem;
+  grid-template-areas: "img1 img2 img3";
+  border-top: 1rem solid var(--orange);
+  background-color: white;
+  box-shadow: 0.8rem 0.8rem 1.2rem rgba(0, 0, 0, 0.5);
+  
+
+}
+
+.three_steps img {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.three_steps .img3 {
+  width: 45%;
+}
+
+
+/* --------------------DOG SECTION ----------------- */
+.dogs_section{
+  text-align: center;
+  color: var(--green);
+  background-color: var(--orange);
+padding: 2rem 0;
+
+}
+.dogs_section h2{
+  color: white;
+
+}
+
+
+.dog_story .dog{
+display: flex;
+justify-content: center;
+margin: 3rem 2rem ;
+padding: 2rem 1rem;
+background-color: #fff8ed;
+border-radius: 1.5rem;
+
+}
+
+.dog_story .thimma{
+flex-direction: row-reverse;
+}
+
+.div_img_cont{
+width: 40%;
+}
+
+.div_img_cont img{
+width: 100%;
+height: 100%;
+object-fit: cover;
+object-position:left;
+border-radius: 5%;
+}
+.bhoomaga .div_img_cont img{
+object-position:right;
+}
+
+
+.dog_description{
+  flex: 1;
+  padding: 0.5rem;
+}
+
+.dog_description h2{
+color: var(--orange);
+
+}
+
+.youtube-btn{
+  background-color: red;
+  color: white;
+  border: 0.1em solid red;
+  font-size: 1.6rem;
+  margin-top: 0.5rem;
+  padding: 0.5em 5em;
+  cursor: pointer;
+  border-radius: 1.8rem;
+  transition: all 0.2s;
+}
+.youtube-btn:hover,
+.youtube-btn:active{
+  background-color: white;
+  color: red;
+  border: 0.1em solid red;
+
+}
+
+
+
+/* ---------------------------------------------------------------------
+_____________________________ RESPONSIVE _______________________________
+---------------------------------------------------------------------- */
+/* 2xl */
+@media (max-width: 1536px) {
+}
+
+/* xl */
+@media (max-width: 1280px) {
+  .three_steps {
+    grid-template-areas:
+      "img1 img2"
+      "img3 img3";
+  }
+}
+
+/* lg */
+@media (max-width: 1024px) {
+  .dog_story .dog{
+    display: block;
+    }
+    .div_img_cont{
+      width: 90%;
+      margin: 0 auto;
+      }
+}
+
+/* md */
+@media (max-width: 768px) {
+  .story_section {
+    padding:  0 1.5rem 1.5rem;
+  }
+
+  .our_story_image h1 {
+    font-size: 2.5rem;
+    left: 35%;
+  }
+
+  .div_story {
+    padding: 1.6rem 1.6rem 5rem;
+    width: 95%;
+  }
+
+  .three_steps {
+    grid-template-areas:
+      "img1"
+      "img2"
+      "img3";
+  }
+  .three_steps .img3 {
+    width: 70%;
+  }
+
+
+}
+
+/* sm */
+@media (max-width: 640px) {
+
+}
+
+/* xs */
+@media (max-width: 475px) {
+  .story_section {
+    padding: 0 0.5rem 3rem;
+  }
+
+  .our_story_image h1 {
+    font-size: 2.4rem;
+    left: 33%;
+  }
+}
